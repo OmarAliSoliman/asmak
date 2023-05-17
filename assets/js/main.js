@@ -4,10 +4,9 @@ $(document).ready(function () {
 
   if ($(".header-slider").length) {
     $(".header-slider").slick({
-      // rtl: currentDir == "rtl" ? true : false,
       arrows: false,
-      fade: true,
-      dots: true,
+      // autoplay: true,
+      // autoplaySpeed: 5000,
     });
   }
 
@@ -134,7 +133,7 @@ $(document).ready(function () {
     $(".bg-side-open").on("click", function () {
       $(".side-nav").removeClass("side-nav-open");
       $("html").removeClass("side-active");
-      $(".profile-sidebar").removeClass('profile-sidebar-active');
+      $(".profile-sidebar").removeClass("profile-sidebar-active");
     });
   }
 
@@ -186,21 +185,56 @@ $(document).ready(function () {
     });
   }
 
-  if($(".open-profile-sidebar").length){
-    $(".open-profile-sidebar").click(function(){
-      $(".profile-sidebar").addClass('profile-sidebar-active');
+  if ($(".open-profile-sidebar").length) {
+    $(".open-profile-sidebar").click(function () {
+      $(".profile-sidebar").addClass("profile-sidebar-active");
       $("html").addClass("side-active");
-    })
+    });
   }
 
-  if($(".profile-sidebar").length){
-    $(".profile-sidebar .close-sidebar").click(function(){
-      $(".profile-sidebar").removeClass('profile-sidebar-active');
+  if ($(".profile-sidebar").length) {
+    $(".profile-sidebar .close-sidebar").click(function () {
+      $(".profile-sidebar").removeClass("profile-sidebar-active");
       $("html").removeClass("side-active");
-    })
+    });
   }
-
 });
+
+if ($("#phone").lenght) {
+  const phoneInputField = document.querySelector("#phone");
+  const phoneInput = window.intlTelInput(phoneInputField, {
+    preferredCountries: ["sa"],
+    separateDialCode: true,
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
+}
+
+var inputs = document.querySelectorAll(".file-input");
+
+for (var i = 0, len = inputs.length; i < len; i++) {
+  customInput(inputs[i]);
+}
+
+function customInput(el) {
+  const fileInput = el.querySelector('[type="file"]');
+  const label = el.querySelector("[data-js-label]");
+
+  fileInput.onchange = fileInput.onmouseout = function () {
+    if (!fileInput.value) return;
+
+    var value = fileInput.value.replace(/^.*[\\\/]/, "");
+    el.className += " -chosen";
+    label.innerText = value;
+  };
+}
+
+// var input = document.querySelector("#phone");
+// var countryName = document.querySelector("#country-name");
+// input.addEventListener("countrychange", function() {
+//   var selectedCountry = phoneInput.getSelectedCountryData();
+//   countryName.textContent = selectedCountry.name;
+// });
 
 // if ($(".animation-debth").length) {
 //   var circles = document.querySelector(".animation-debth");

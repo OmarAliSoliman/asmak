@@ -16,10 +16,11 @@
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
   <!-- for english version please change style to en style ./assets/css/style-en.css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Home</title>
+  <title>Sign up</title>
 </head>
 
 <body>
@@ -103,107 +104,114 @@
     </div>
   </div>
 
-  <div class="main-content home-main-content">
+  <div class="main-content home-main-content login-main-content">
 
     <div class="wrapper">
-      <div class="header-slider-parent">
-        <div class="header-slider" dir="ltr">
-          <div class="slider-item">
-            <div class="card-img">
-              <div class="img-parent">
-                <img src="./assets/images/slider1.png" alt="">
-              </div>
-              <a href=""><i class="fas fa-plus"></i><span>الإعلان المدفوع</span></a>
-            </div>
-          </div>
 
-          <div class="slider-item">
-            <div class="card-img">
-              <div class="img-parent">
-                <img src="./assets/images/slider2.png" alt="">
-              </div>
-              <a href=""><i class="fas fa-plus"></i><span>الإعلان المدفوع</span></a>
-            </div>
-          </div>
+      <div class="container">
+        <div class="login-page">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 p-0 m-0">
+              <div class="login-form">
+                <img src="./assets/images/star.svg" class="star-shape" alt="">
+                <h5>تسجيل حساب جديد</h5>
+                <form action="">
+                  <div class="row">
 
-          <div class="slider-item">
-            <div class="card-img">
-              <div class="img-parent">
-                <img src="./assets/images/slider3.png" alt="">
+                    <div class="col-sm-12 col-lg-12">
+                      <div class="form-group mb-5 d-flex align-items-center">
+                        <div class="personal-img">
+                          <div class="per" style="background-image: url('./assets/images/account.webp');"></div>
+                          <div class="upload-btn-wrapper">
+                            <button class="btn">
+                              <img src="./assets/images/camera.svg" alt="">
+                            </button>
+                            <input type="file" data-file-upload="" class="personal-img-file" name="myfile" />
+                          </div>
+                        </div>
+                        <h4 class="personlaimg-h4">رفع صورة</h4>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for=""> <i class="fas fa-user"></i> <span>أسم المستخدم</span> </label>
+                        <input type="text" class="form-control" placeholder="966055356757">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group" >
+                        <label for=""> <i class="fas fa-mobile-alt"></i> <span>رقم الجوال</span> </label>
+                        <span id="country-name"></span>
+                        <input type="text" class="form-control" id="phone" placeholder="966055356757">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for=""> <i class="fas fa-mobile-alt"></i> <span>البريد الالكتروني</span> </label>
+                        <input type="email" class="form-control" placeholder="Asmak@gmail.com">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for=""> <i class="fas fa-mobile-alt"></i> <span>الرقم السري</span> </label>
+                        <input type="text" class="form-control" placeholder="****">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for=""> <i class="fas fa-mobile-alt"></i> <span>تاكيد الرقم السري</span> </label>
+                        <input type="text" class="form-control" placeholder="****">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for=""> <i class="fas fa-mobile-alt"></i> <span>الجنس</span> </label>
+                        <select name="" id="" class="custom-select">
+                          <option value="">ذكر</option>
+                          <option value="">انثى</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="condition-approve">
+                        <input type="checkbox" name="" id="conditionapproval">
+                        <label for="conditionapproval"> قبول <span>الشروط و الاحاكم</span> </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="btn-submit">
+                        <button class="btn">انشاء حساب</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="newaccount">
+                        <p>بالفعل لدي حساب <a href="#">تسجيل الدخول</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <a href=""><i class="fas fa-plus"></i><span>الإعلان المدفوع</span></a>
+            </div>
+            <div class="col-sm-12 col-lg-6 p-0 m-0">
+              <div class="login-div d-flex align-items-center flex-column justify-content-center">
+                <div class="logo">
+                  <img src="./assets/images/logo.svg" alt="">
+                </div>
+                <p>اهلا بك في</p>
+                <h5>الأسماك الذهبية</h5>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-
-      <div class="category">
-        <div class="container">
-          <div class="section-header">
-            <p>إذا كنت تريد شراء أو بيع سمك أو مطعم سمك أو تريد مندوب توصيل طلب أو عرض سجل بياناتك</p>
-            <h5>الأقسام الرئيسية للأسماك الذهبية</h5>
-          </div>
-          <div class="category-cards">
-            <div class="row">
-
-              <div class="col-sm-12 col-lg-6">
-                <div class="categor-card">
-                  <div class="card-icon">
-                    <img src="./assets/images/cat1.png" alt="">
-                  </div>
-                  <h5>أسماك/مبردة مجمدة/زينة</h5>
-                  <div class="options">
-                    <a href="">شراء</a>
-                    <a href="">بيع</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-lg-6">
-                <div class="categor-card">
-                  <div class="card-icon">
-                    <img src="./assets/images/cat2.png" alt="">
-                  </div>
-                  <h5>مستلزمات الاسماك</h5>
-                  <div class="options">
-                    <a href="">شراء</a>
-                    <a href="">بيع</a>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <div class="col-sm-12 col-lg-6">
-                <div class="categor-card">
-                  <div class="card-icon">
-                    <img src="./assets/images/cat3.png" alt="">
-                  </div>
-                  <h5>توصيل الطلبات</h5>
-                  <div class="options">
-                    <a href="">شراء</a>
-                    <a href="">عرض خدمة</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-lg-6">
-                <div class="categor-card">
-                  <div class="card-icon">
-                    <img src="./assets/images/cat4.png" alt="">
-                  </div>
-                  <h5>مطاعم السمك</h5>
-                  <div class="options">
-                    <a href="">شراء</a>
-                    <a href="">بيع</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -280,7 +288,6 @@
     </div>
   </footer>
 
-
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
@@ -289,6 +296,7 @@
   <script src="./assets/js/wow.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
