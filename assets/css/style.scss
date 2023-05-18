@@ -98,6 +98,7 @@ p {
   text-align: center;
   border: 1px solid $mainColor;
   border-radius: 42px;
+
   &:hover {
     color: $mainColor;
     background-color: #fff;
@@ -115,6 +116,7 @@ p {
   border-radius: 38px;
   text-align: center;
   border: 1px solid $mainColor;
+
   &:hover {
     color: $mainColor;
     background-color: #fff;
@@ -145,6 +147,7 @@ p {
 .no-margin {
   margin: 0;
 }
+
 .no-padding {
   padding: 0;
 }
@@ -163,6 +166,7 @@ p {
   // padding-right: 105px;
   position: relative;
   margin-bottom: 20px;
+
   // .personal-img-validation-delete {
   //   color: #f00;
   //   font-size: 13px;
@@ -183,6 +187,7 @@ p {
     background-color: #f0f0f0;
     // cursor: pointer;
   }
+
   .upload-btn-wrapper {
     position: relative;
     overflow: hidden;
@@ -218,15 +223,18 @@ p {
     justify-content: center;
     width: 60px;
     height: 60px;
+
     i,
     span {
       color: #fff;
     }
+
     i {
       // margin-left: 5px;
       margin-top: -3px;
       font-size: 1.2rem;
     }
+
     img {
       // width: 100px;
     }
@@ -253,6 +261,7 @@ p {
 .side-active {
   height: 100vh;
   overflow: hidden;
+
   .bg-side-open {
     position: fixed;
     top: 0;
@@ -268,6 +277,7 @@ p {
   height: 100vh;
   overflow: hidden;
 }
+
 /* splash */
 .splash {
   position: fixed;
@@ -278,6 +288,7 @@ p {
   overflow: hidden;
   background-color: $mainColor;
   z-index: 99;
+
   .wrapper {
     width: 200px;
     height: 60px;
@@ -286,6 +297,7 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
   .circle {
     width: 15px;
     height: 15px;
@@ -304,24 +316,29 @@ p {
       border-radius: 50px 50px 25px 25px;
       transform: scaleX(1.7);
     }
+
     40% {
       height: 20px;
       border-radius: 50%;
       transform: scaleX(1);
     }
+
     100% {
       top: 0%;
     }
   }
+
   .circle:nth-child(2) {
     left: 45%;
     animation-delay: 0.2s;
   }
+
   .circle:nth-child(3) {
     left: auto;
     right: 15%;
     animation-delay: 0.3s;
   }
+
   .shadow {
     width: 20px;
     height: 4px;
@@ -340,24 +357,29 @@ p {
     0% {
       transform: scaleX(1.5);
     }
+
     40% {
       transform: scaleX(1);
       opacity: 0.7;
     }
+
     100% {
       transform: scaleX(0.2);
       opacity: 0.4;
     }
   }
+
   .shadow:nth-child(4) {
     left: 45%;
     animation-delay: 0.2s;
   }
+
   .shadow:nth-child(5) {
     left: auto;
     right: 15%;
     animation-delay: 0.3s;
   }
+
   .wrapper span {
     position: absolute;
     top: 75px;
@@ -486,15 +508,18 @@ p {
   transition: all 0.3s ease-in-out;
   overflow-x: hidden;
   overflow: auto;
+
   .side-wrapper {
     height: 50vh;
     // margin-top: 90px;
   }
+
   .close-nav {
     position: absolute;
     top: 10px;
     right: 10px;
   }
+
   .logo {
     text-align: center;
     margin-bottom: 30px;
@@ -504,19 +529,24 @@ p {
     height: 100%;
     overflow: auto;
     margin-top: 10px;
+
     ul {
       height: 100%;
+
       li {
         margin-bottom: 10px;
         border-bottom: 1px solid #eee;
+
         a {
           color: #000;
           display: block;
           padding: 10px 5px;
           font-size: 1rem;
         }
+
         &.active {
           background-color: $mainColor;
+
           a {
             color: #fff;
           }
@@ -524,16 +554,20 @@ p {
       }
     }
   }
+
   .option {
     margin-top: 20px;
+
     li {
       margin-top: 10px;
+
       a {
         padding: 10px 5px;
         color: #fff;
         border: 1px solid $mainColor;
       }
     }
+
     .login-item {
       a {
         background-color: $mainColor;
@@ -541,6 +575,7 @@ p {
         text-align: center;
       }
     }
+
     .signup-item {
       a {
         background-color: #fff;
@@ -590,39 +625,48 @@ p {
   border: 1px solid #fff;
   border-radius: 50%;
   box-shadow: 0 7px 9px rgba(0, 0, 0, 0.16);
+
   &::before {
     @extend %inilizeFonrtAwsome_Before_After;
     color: #000;
     font-size: 1.1rem;
     transition: all 0.3s ease-in-out;
   }
+
   &.slick-next {
     top: 30%;
     transform: translate(0, -30%);
     right: 0;
+
     &::before {
       content: url(../images/arrow.svg);
       margin-left: 5px;
       // background-image: url(../images/arrow.svg);
     }
   }
+
   &.slick-prev {
     top: 30%;
     transform: translate(0, -30%);
     left: 0;
+
     &::before {
       content: url(../images/arrow2.svg);
       margin-right: 5px;
     }
   }
+
   &:hover {
     background-color: $mainColor;
+
     &::before {
       color: #fff;
     }
   }
+
   &:focus {
     background-color: $mainColor;
+
     &::before {
       color: #fff;
     }
@@ -635,12 +679,14 @@ p {
 .top-header {
   background-color: $mainColor;
   padding: 13px 0;
+
   .login-rigister-account-lang {
     .login-register {
       ul {
         background-color: #fff;
         width: fit-content;
         border-radius: 2px;
+
         li {
           a {
             display: inline-block;
@@ -648,6 +694,7 @@ p {
             color: #000;
             font-family: conl;
             position: relative;
+
             &::after {
               position: absolute;
               content: "";
@@ -659,6 +706,7 @@ p {
               left: 0px;
             }
           }
+
           &:last-child {
             a {
               &::after {
@@ -669,6 +717,7 @@ p {
         }
       }
     }
+
     .account {
       .card-img {
         width: 42px;
@@ -676,40 +725,53 @@ p {
         border-radius: 50%;
         margin-right: 21px;
         border: 2px solid #fff;
+
         img {
           border-radius: 50%;
         }
       }
     }
   }
+
   .nice-select {
     margin-right: 20px;
     border: 0;
     float: none;
     padding-right: 0;
     color: #fff;
+
     &::after {
       right: unset;
       left: 0;
       border-bottom: 2px solid #fff;
       border-right: 2px solid #fff;
     }
+
     .option {
       color: #000;
       text-align: right;
       padding-right: 8px;
     }
   }
+
   .social {
     ul {
       a {
         display: inline-block;
         margin-right: 5px;
       }
+
       i {
         color: #fff;
         font-size: 1.5rem;
       }
+    }
+  }
+
+  .message{
+    margin-right: 40px;
+    i{
+      font-size: 1.4rem;
     }
   }
 }
@@ -719,18 +781,21 @@ p {
 .mynavbar {
   background-color: #b7ebff;
   padding: 12px 0;
+
   .lista {
     li {
       a {
         color: #000;
         padding: 3px 10px;
         margin-left: 20px;
+
         &:hover {
           background-color: $mainColor;
           border-radius: 6px;
           color: #fff;
         }
       }
+
       &.active {
         a {
           background-color: $mainColor;
@@ -749,22 +814,26 @@ p {
       border-bottom-right-radius: 29px;
       border-top-left-radius: 30px;
       border-bottom-left-radius: 10px;
+
       .input-group-text {
         background-color: #fff;
         border-left: 0;
         border-top-right-radius: 29px;
         border-bottom-right-radius: 29px;
         border: 0;
+
         i {
           color: $mainColor;
         }
       }
+
       input {
         border-right: 0;
         background-color: #fff;
         border-left: 0;
         border: 0;
       }
+
       button {
         background-color: $mainColor !important;
         color: #fff;
@@ -800,11 +869,42 @@ p {
 /* header-slider-parent */
 .header-slider-parent {
   position: relative;
+
   .slider-item {
     .card-img {
       height: calc(100vh - (150px + 50px));
+      position: relative;
+      a{
+        position: absolute;
+        z-index: 9;
+        background-color: $mainColor;
+        width: 296px;
+        max-width: 100%;
+        text-align: center;
+        color: #fff;
+        border-radius: 10px;
+        padding: 18px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-size: 1.7rem;
+        direction: ltr;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        border: 1px solid $mainColor;
+        i{
+          margin-left: 10px;
+          font-size: 1.7rem;
+        }
+        &:hover{
+          background-color: #fff;
+          color: $mainColor;
+        }
+      }
     }
   }
+
   .share-option {
     position: absolute;
     top: 45px;
@@ -812,6 +912,7 @@ p {
     z-index: 8;
     display: flex;
     align-items: center;
+
     a {
       width: 52px;
       height: 52px;
@@ -821,6 +922,7 @@ p {
       align-items: center;
       justify-content: center;
       margin-left: 5px;
+
       i {
         font-size: 1.4rem;
         color: #000;
@@ -831,14 +933,18 @@ p {
 
 .category {
   padding-top: 100px;
+
   .section-header {
+
     p,
     h5 {
       color: #fff;
     }
+
     p {
       font-size: 1.9rem;
     }
+
     h5 {
       margin-top: 39px;
       font-family: conb;
@@ -846,24 +952,48 @@ p {
     }
   }
 }
+
 .category-cards {
   .categor-card {
     margin-top: 125px;
+
     .card-icon {
       text-align: center;
       height: 350px;
+      position: relative;
+      z-index: 4;
+      .shape{
+        position: absolute;
+        bottom: 50px;
+        left: 70%;
+        z-index: -1;
+        opacity: .7;
+        transform: translate(-70%, 0);
+      }
+      .shape2{
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      .shape3{
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%, 0);
+      }
     }
+
     h5 {
       text-align: center;
       font-size: 2.2rem;
       margin-top: 15px;
       margin-bottom: 39px;
     }
+
     .options {
       width: 50%;
       display: flex;
       align-items: center;
       margin: auto;
+
       a {
         padding: 14px 20px;
         background-color: #00c32d;
@@ -874,9 +1004,11 @@ p {
         display: inline-block;
         margin-left: 20px;
         font-size: 1.3rem;
+
         &:last-child {
           background-color: #720610;
         }
+
         &:hover {
           background-color: #fff;
           color: #000;
@@ -889,15 +1021,19 @@ p {
 /* ================================================================ */
 .one-category-page {
   padding-top: 100px;
+
   .section-header {
     margin-bottom: 100px;
+
     p,
     h5 {
       color: #fff;
     }
+
     p {
       font-size: 1.9rem;
     }
+
     h5 {
       margin-top: 39px;
       font-family: conb;
@@ -911,40 +1047,49 @@ p {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.11);
   border-radius: 11px;
   margin-bottom: 31px;
+
   .like {
     position: absolute;
     top: 20px;
     left: 22px;
+
     .wrap {
       width: 42px;
       height: 42px;
       border-radius: 50%;
       background-color: #b9b9b9;
       cursor: pointer;
+
       i {
         font-size: 1.3rem;
       }
     }
   }
+
   .card-img {
     width: 348px;
     height: 300px;
     border-top-right-radius: 11px;
     border-bottom-right-radius: 11px;
+
     img {
       border-top-right-radius: 11px;
       border-bottom-right-radius: 11px;
     }
   }
+
   .card-body {
     padding: 19px 57px 59px 0;
+
     h5 {
       font-size: 1.7rem;
       margin-bottom: 19px;
     }
+
     ul {
       li {
         margin-bottom: 34px;
+
         i {
           color: $mainColor;
         }
@@ -960,35 +1105,42 @@ p {
     background-color: rgba(255, 255, 255, 0.5);
   }
 }
+
 /* ================================================================ */
 
 .login-page {
   padding: 90px 0;
   border-radius: 30px;
+
   .login-form {
     background-color: #f7f7f7;
     border-radius: 0 30px 30px 0;
     padding: 58px 50px;
     padding-bottom: 39px;
     position: relative;
+
     .star-shape {
       position: absolute;
       top: 0;
       left: 40px;
     }
+
     h5 {
       // margin-right: 100px;
       text-align: center;
       font-size: 2rem;
     }
+
     p {
       font-family: conl;
       text-align: center;
       // margin-right: 100px;
     }
+
     form {
       margin-top: 50px;
     }
+
     .forget-pass {
       a {
         text-decoration: underline;
@@ -996,8 +1148,10 @@ p {
         font-size: 0.9rem;
       }
     }
+
     .btn-submit {
       margin-top: 80px;
+
       .btn {
         background-color: $mainColor;
         color: #fff;
@@ -1005,59 +1159,72 @@ p {
         border-radius: 10px;
         padding: 22px 10px;
         border: 1px solid $mainColor;
+
         &:hover {
           background-color: #fff;
           color: $mainColor;
         }
       }
     }
+
     .newaccount {
       color: #535353;
       font-size: 0.9rem;
       font-family: conl;
       margin-top: 26px;
       text-align: center;
+
       a {
         color: $mainColor;
       }
     }
+
     .condition-approve {
       margin-top: 30px;
       display: flex;
       align-items: center;
+
       label {
         font-family: conl;
         margin-right: 5px;
+
         span {
           font-family: conb;
         }
       }
     }
+
     .iti {
       display: block;
+
       // padding-right: .57rem;
       input {
         padding-right: 0.57rem;
       }
     }
+
     .iti__country-list {
       text-align: left;
       left: 0;
       direction: ltr;
     }
+
     .iti__flag {
       border-radius: 50%;
       overflow: hidden;
     }
+
     .form-inputs-header {
       font-size: 1.3rem;
       color: #000;
       margin-right: 0;
     }
+
     .form-inputs {
       display: flex;
       align-items: center;
       justify-content: center;
+
       .form-group {
         width: 78px;
         height: 85px;
@@ -1065,6 +1232,7 @@ p {
         // align-items: center;
         // justify-content: center;
         margin: 0 9px;
+
         .form-control {
           width: 100%;
           height: 100%;
@@ -1076,9 +1244,11 @@ p {
           border: 0;
           padding-top: 18px;
           font-size: 2.5rem;
+
           &:focus {
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
           }
+
           &::placeholder {
             color: #8e8e8e;
             font-size: 2.5rem;
@@ -1101,12 +1271,15 @@ p {
   padding-bottom: 0;
   border-radius: 30px 0 0 30px;
   background-color: rgba(255, 255, 255, 0.1);
+
   .logo {
     margin-bottom: 120px;
   }
+
   p {
     font-size: 1.8rem;
   }
+
   h5 {
     font-size: 3.8rem;
   }
@@ -1119,19 +1292,23 @@ input[type="number"] {
 
 .form-group {
   margin-top: 50px;
+
   label {
     margin-bottom: 8px;
+
     i {
       color: $mainColor;
       margin-left: 5px;
     }
   }
+
   .form-control {
     border-radius: 10px;
     border: 0.5px solid $mainColor;
     background-color: #fff;
     height: 61px;
   }
+
   .nice-select {
     border-radius: 10px;
     border: 0.5px solid $mainColor;
@@ -1140,12 +1317,15 @@ input[type="number"] {
     line-height: 60px;
     padding-right: 0.75rem;
     text-align: right !important;
+
     &::after {
       left: 10px;
       right: unset;
     }
+
     .list {
       width: 100%;
+
       .option {
         text-align: right;
         padding-right: 0.75rem;
@@ -1163,62 +1343,92 @@ input[type="number"] {
     width: fit-content;
     margin-top: 100px;
     margin-bottom: 43px;
+
     h5 {
       font-size: 2rem;
       color: #fff;
       margin: 0;
     }
+
   }
+
+  .like-dislike{
+    li{
+      a{
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#F0F0F0;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
   .detprice {
     h5 {
       color: #fff;
       font-size: 2rem;
       margin-bottom: 20px;
     }
+
     ul {
       margin-bottom: 40px;
+
       li {
         color: #fff;
         margin-left: 74px;
+
         i {
           margin-left: 4px;
         }
       }
     }
+
     .price {
       p {
         color: #fff;
       }
+
       h5 {
         span {
           font-family: conb;
         }
       }
     }
+
     .report {
       border: 1px solid #ffffff;
       width: fit-content;
+
       .icon {
         background-color: rgba(#ffffff, 0.38);
         padding: 5px;
       }
+
       span {
         padding: 10px;
         color: #000;
       }
     }
   }
+
   .decription {
     margin-top: 85px;
+
     h5 {
       margin-bottom: 50px;
       color: #fff;
       font-size: 2rem;
     }
+
     .decription-box {
       background-color: rgba(255, 255, 255, 0.6);
       padding: 31px 40px 31px 40px;
       border-radius: 24px;
+
       p {
         font-size: 1.3rem;
         font-family: conl;
@@ -1227,16 +1437,20 @@ input[type="number"] {
       }
     }
   }
+
   .comments {
     margin-top: 64px;
+
     .comment-header {
       h5 {
         font-size: 1.6rem;
+
         span {
           color: $mainColor;
           font-size: 1rem;
         }
       }
+
       a {
         background-color: $mainColor;
         border-radius: 32px;
@@ -1245,6 +1459,7 @@ input[type="number"] {
         min-width: 150px;
         text-align: center;
         border: 1px solid $mainColor;
+
         &:hover {
           background-color: #fff;
           color: $mainColor;
@@ -1255,10 +1470,12 @@ input[type="number"] {
 
   .contact-info {
     margin-top: 100px;
+
     h5 {
       font-size: 1.6rem;
       margin-bottom: 64px;
     }
+
     .contact-card {
       .card-img {
         width: 204px;
@@ -1266,10 +1483,12 @@ input[type="number"] {
         border-radius: 13px;
         border: 1px solid $mainColor;
         margin-top: 25px;
+
         img {
           border-radius: 13px;
         }
       }
+
       .card-body {
         background-color: #f4f4f4;
         border-radius: 13px;
@@ -1280,22 +1499,27 @@ input[type="number"] {
         padding: 41px 20px;
         text-align: center;
         margin-right: -110px;
+
         h6 {
           font-size: 1.5rem;
           color: $mainColor;
         }
+
         p {
           font-size: 1.5rem;
           margin-top: 30px;
+
           img {
             width: 30px;
           }
         }
       }
     }
+
     .btn-contact {
       margin-top: 114px;
       text-align: center;
+
       a {
         background-color: $mainColor;
         color: #fff;
@@ -1307,6 +1531,7 @@ input[type="number"] {
         text-align: center;
         margin: auto;
         border: 1px solid $mainColor;
+
         &:hover {
           background-color: #fff;
           color: $mainColor;
@@ -1327,31 +1552,39 @@ input[type="number"] {
 /* ================================================================ */
 .product-owner-page {
   padding: 93px 0;
+
   .product-owner-page-header {
     margin-bottom: 55px;
     font-size: 1.6rem;
     color: #fff;
   }
+
   .owner-card {
     margin-bottom: 110px;
+
     .card-img {
       width: 194px;
       height: 152px;
       border-radius: 11px;
       box-shadow: 0 3px 6px rgba(#ee6e2d, 0.2);
       border: 1px solid #ee6e2d;
+
       img {
         border-radius: 11px;
       }
     }
+
     .card-body {
       padding: 25px;
+
       h5 {
         font-size: 1.5rem;
         color: #fff;
       }
+
       p {
         color: #fff;
+
         i {
           margin-left: 5px;
         }
@@ -1362,35 +1595,43 @@ input[type="number"] {
 
 .new-free-product {
   padding: 63px 0;
+
   .section-header {
     text-align: center;
     margin-bottom: 125px;
+
     h5 {
       font-size: 3rem;
       color: #fff;
     }
+
     p {
       font-size: 1.5rem;
       margin-top: 20px;
       color: #fff;
     }
   }
+
   form {
     .form-group {
       .form-control {
         line-height: 48px;
       }
+
       label {
         color: #fff;
+
         .chose {
           color: #db0000;
           margin-right: 5px;
         }
       }
+
       textarea {
         height: 213px !important;
         resize: none;
       }
+
       .file-input {
         background: #fff;
         padding: 13px;
@@ -1405,7 +1646,7 @@ input[type="number"] {
         justify-content: space-between;
       }
 
-      .file-input > [type="file"] {
+      .file-input>[type="file"] {
         position: absolute;
         top: 0;
         left: 0;
@@ -1416,7 +1657,7 @@ input[type="number"] {
         cursor: pointer;
       }
 
-      .file-input > .button {
+      .file-input>.button {
         display: inline-block;
         cursor: pointer;
         background: #eee;
@@ -1431,30 +1672,31 @@ input[type="number"] {
         align-items: center;
         justify-content: center;
         border-radius: 5px;
+
         img {
           width: 20px;
         }
       }
 
-      .file-input .button {
-      }
+      .file-input .button {}
 
-      .file-input:hover > .button {
+      .file-input:hover>.button {
         background: dodgerblue;
         color: white;
       }
 
-      .file-input > .label {
+      .file-input>.label {
         color: #333;
         white-space: nowrap;
         // opacity: .3;
       }
 
-      .file-input.-chosen > .label {
+      .file-input.-chosen>.label {
         opacity: 1;
       }
     }
   }
+
   .moda_images {
     // padding: 0 53px;
     // padding-top: 30px;
@@ -1472,10 +1714,12 @@ input[type="number"] {
       margin-left: 13px;
       margin-bottom: 13px;
       border-radius: 6px;
+
       img {
         border-radius: 6px;
         transition: all 0.3s ease-in-out;
       }
+
       video {
         width: 100%;
         height: 100%;
@@ -1483,15 +1727,18 @@ input[type="number"] {
         border-radius: 5px;
         transition: all 0.3s ease-in-out;
       }
+
       &:hover {
         img {
           transform: scale(1.5);
         }
       }
     }
+
     label {
       cursor: pointer;
     }
+
     .custom_input_file {
       width: 87px;
       height: 67px;
@@ -1505,9 +1752,11 @@ input[type="number"] {
       cursor: pointer;
       position: relative;
       overflow: hidden;
+
       img {
         width: 35px;
       }
+
       input {
         position: absolute;
         z-index: -1;
@@ -1516,9 +1765,11 @@ input[type="number"] {
       }
     }
   }
+
   .btn-submit {
     margin-top: 100px;
     text-align: center;
+
     .btn {
       background-color: $mainColor;
       color: #fff;
@@ -1528,6 +1779,7 @@ input[type="number"] {
       padding: 22px 10px;
       margin: auto;
       border: 1px solid $mainColor;
+
       &:hover {
         background-color: #fff;
         color: $mainColor;
@@ -1540,6 +1792,7 @@ input[type="number"] {
 
 .btn-more {
   text-align: center;
+
   a,
   button {
     display: inline-block;
@@ -1553,6 +1806,7 @@ input[type="number"] {
     color: #fff;
     width: 100%;
     max-width: 500px;
+
     &:hover {
       background-color: #fff;
       color: $mainColor;
@@ -1562,6 +1816,7 @@ input[type="number"] {
 
 .myaccount-profile {
   padding: 76px 0 50px 0;
+
   .profile-sidebar {
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -1584,38 +1839,48 @@ input[type="number"] {
       height: 117px;
       border-radius: 15px;
       margin: auto;
+
       img {
         border-radius: 15px;
       }
     }
   }
+
   .close-sidebar {
     display: none;
   }
+
   .side-list {
     margin-top: 60px;
+
     li {
       a {
         display: block;
         padding: 20px 40px;
+
         i {
           margin-left: 14px;
           color: #323e48;
           transition: all 0.3s ease-in-out;
         }
+
         span {
           color: #323e48;
           transition: all 0.3s ease-in-out;
         }
+
         &:hover {
           background-color: #f5f5f5;
+
           i,
           span {
             color: $mainColor;
           }
         }
+
         &.active {
           background-color: #f5f5f5;
+
           i,
           span {
             color: $mainColor;
@@ -1629,33 +1894,40 @@ input[type="number"] {
 .profile-left-data {
   padding: 0 62px;
   padding-left: 0;
-  .onecategory-card{
-    .card-img{
+
+  .onecategory-card {
+    .card-img {
       height: 240px;
     }
-    .card-body{
+
+    .card-body {
       padding-bottom: 0;
     }
-    .like{
-      .wrap{
+
+    .like {
+      .wrap {
         border-radius: 5px;
         background-color: #fff;
-        i{
+
+        i {
           color: red;
         }
       }
     }
-    .edit{
+
+    .edit {
       background-color: #00114E;
       border-radius: 9px;
       padding: 10px 15px;
       margin-right: auto;
-      display:block;
+      display: block;
       width: fit-content;
       margin-left: 30px;
-      a{
+
+      a {
         color: #fff;
-        i{
+
+        i {
           margin-left: 5px;
         }
       }
@@ -1670,27 +1942,34 @@ input[type="number"] {
     font-size: 2rem;
     margin-bottom: 35px;
   }
+
   .form-group {
     margin-bottom: 26px;
+
     label {
       margin-bottom: 12px;
       color: #fff;
+
       i {
         color: #fff;
         margin-left: 13px;
       }
     }
+
     .form-control {
       height: 60px;
+
       &::placeholder {
         color: #8d8d8d;
         font-size: 0.9rem;
       }
     }
   }
+
   .btn-options {
     margin-top: 126px;
   }
+
   .btn-change-pass {
     a {
       margin-top: 44px;
@@ -1705,6 +1984,7 @@ input[type="number"] {
     // padding-right: 105px;
     position: relative;
     margin-bottom: 20px;
+
     // .personal-img-validation-delete {
     //   color: #f00;
     //   font-size: 13px;
@@ -1725,6 +2005,7 @@ input[type="number"] {
       background-color: #f0f0f0;
       // cursor: pointer;
     }
+
     .upload-btn-wrapper {
       position: relative;
       overflow: hidden;
@@ -1738,7 +2019,7 @@ input[type="number"] {
       right: 0;
       bottom: -10px;
     }
-  
+
     .btn {
       color: $mainColor;
       cursor: pointer !important;
@@ -1760,21 +2041,23 @@ input[type="number"] {
       justify-content: center;
       width: 33px;
       height: 33px;
+
       i,
       span {
         color: #fff;
       }
+
       i {
         // margin-left: 5px;
         margin-top: -3px;
         font-size: 1.2rem;
       }
     }
-  
+
     .btn:disabled {
       display: none;
     }
-  
+
     .upload-btn-wrapper input[type="file"] {
       font-size: 100px;
       position: absolute;
@@ -1783,6 +2066,7 @@ input[type="number"] {
       opacity: 0;
       cursor: pointer;
     }
+
     h5 {
       margin-top: 50px;
     }
@@ -1792,17 +2076,19 @@ input[type="number"] {
 /* ================================================================ */
 
 .notification-page {
-  li {
-  }
+  li {}
+
   .wrapper {
     ul {
       li {
         margin-bottom: 21px;
+
         a {
           margin-bottom: 30px;
           padding: 18px;
           display: block;
           background-color: rgba(255, 255, 255, 0.5);
+
           p {
             padding-right: 75px;
             @extend %spcfies-number-of-line;
@@ -1810,6 +2096,7 @@ input[type="number"] {
             line-height: 35px;
             font-family: conl;
             position: relative;
+
             &::before {
               content: "\f0f3";
               @extend %inilizeFonrtAwsome_Before_After;
@@ -1826,10 +2113,12 @@ input[type="number"] {
               box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
             }
           }
+
           .date {
             padding-right: 75px;
             color: #5c5c5c;
           }
+
           &.active {
             background-color: rgba(255, 255, 255, 1);
           }
@@ -1846,9 +2135,9 @@ input[type="number"] {
     background-color: rgba(255, 255, 255, 0.5);
   }
 }
+
 /* ================================================================ */
-.profile-inner-chats {
-}
+.profile-inner-chats {}
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .innerchat-card {
@@ -1866,31 +2155,37 @@ input[type="number"] {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
   background-color: rgba(255, 255, 255, 0.3);
   margin-top: 44px;
+
   .card-img {
     width: 103px;
     height: 109px;
     margin-left: 25px;
     flex: none;
     box-shadow: 0 px 2px rgba(0, 0, 0, 0.16);
+
     img {
       border: 1px solid $mainColor;
       border-radius: 13px;
     }
   }
+
   .card-body {
     h5 {
       color: $mainColor;
       margin: 0;
       font-size: 1rem;
     }
+
     .time {
       margin: 13px 0;
+
       i,
       span {
         font-size: 0.6rem;
         color: #6a6a6a;
       }
     }
+
     p {
       color: #6c6c6c;
       font-size: 0.8rem;
@@ -1899,6 +2194,7 @@ input[type="number"] {
       margin: 0;
     }
   }
+
   &.active {
     background-color: rgba(255, 255, 255, 1);
   }
@@ -1912,16 +2208,19 @@ input[type="number"] {
     background-color: transparent;
     padding-top: 0;
   }
+
   .chat-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+
     .card-img {
       width: 112px;
       height: 92px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
       border-radius: 13px;
+
       img {
         border-radius: 13px;
       }
@@ -1933,13 +2232,16 @@ input[type="number"] {
     overflow: auto;
     padding: 0 20px;
   }
+
   .chat-message-form {
     .input-group {
       height: 84px;
+
       input {
         border: 1px solid $mainColor;
       }
     }
+
     .input-group-text {
       background-color: $mainColor;
       border: 1px solid $mainColor;
@@ -1953,46 +2255,53 @@ input[type="number"] {
 
 .chat-message {
   margin-bottom: 100px;
+
   .message {
     padding: 29px 23px 60px 23px;
     margin-bottom: 16px;
     width: 60%;
     border-radius: 13px;
+
     p {
       font-size: 1rem;
     }
   }
+
   .time {
     color: rgba(0, 0, 0, 0.36);
+
     i {
       margin-left: 10px;
       color: $mainColor;
     }
   }
+
   &.message-sent {
     .message {
       background-color: #00114e60;
       border-bottom-left-radius: 0;
-      p{
+
+      p {
         color: #fff;
       }
     }
   }
+
   &.message-receive {
     .message {
       margin-right: auto;
-      background-image: linear-gradient(
-        to left,
-        #00B7FF,
-        #00B7FF,
-        #00B7FF,
-        rgba(248, 248, 248, 0.25)
-      );
+      background-image: linear-gradient(to left,
+          #00B7FF,
+          #00B7FF,
+          #00B7FF,
+          rgba(248, 248, 248, 0.25));
       border-bottom-left-radius: 0;
     }
+
     p {
       color: #fff;
     }
+
     .time {
       text-align: left;
     }
@@ -2011,25 +2320,31 @@ input[type="number"] {
 
 .faq-page {
   padding-top: 41px;
+
   .faq-head {
     text-align: center;
     margin-bottom: 25px;
+
     h5 {
       font-size: 1.8rem;
       color: #fff;
     }
   }
+
   .wrapper {
     border: 0;
     border-radius: 24px;
     padding: 52px 57px;
     background-color: rgba(255, 255, 255, 0.7);
+
     .accordion-item {
       background-color: transparent;
       border-bottom-color: rgba(112, 112, 112, .24);
+
       .accordion-header {
         padding: 15px 0;
       }
+
       .accordion-button {
         background-color: transparent;
         font-size: 1.3rem;
@@ -2040,11 +2355,13 @@ input[type="number"] {
           box-shadow: none;
         }
       }
+
       .accordion-body {
         .content {
           background-color: #f7f7f7;
           padding: 28px 18px;
           border-radius: 13px;
+
           p {
             color: $mainColor;
             font-size: 1rem;
@@ -2052,6 +2369,7 @@ input[type="number"] {
           }
         }
       }
+
       .accordion-button:not(.collapsed) {
         color: #000;
       }
@@ -2061,20 +2379,23 @@ input[type="number"] {
 
 /* ================================================================ */
 .terms-condition-page {
-  .about-patform-head{
+  .about-patform-head {
     text-align: center;
-    h5{
+
+    h5 {
       color: #fff;
       font-size: 2rem;
       margin-bottom: 44px;
     }
   }
+
   .terms-condition-content {
     ul {
       li {
         margin-bottom: 25px;
         position: relative;
         padding-right: 30px;
+
         &::before {
           content: "";
           position: absolute;
@@ -2086,16 +2407,261 @@ input[type="number"] {
           background-color: #fff;
           border-radius: 50%;
         }
-        p{
+
+        p {
           color: #fff;
         }
       }
     }
   }
 }
-/* ================================================================ */
 
 /* ================================================================ */
+.add-payment-page {
+  padding: 170px 0 60px 0;
+
+  .head {
+    text-align: center;
+    margin-bottom: 120px;
+
+    h5 {
+      color: #fff;
+      font-size: 3rem;
+    }
+  }
+
+  .single-price {
+    margin-bottom: 100px;
+
+    h4 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .box-price {
+      text-align: center;
+      padding: 38px;
+      width: fit-content;
+      width: 318px;
+      max-width: 100%;
+      margin-top: 40px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.3);
+
+      p {
+        font-size: 2.4rem;
+        font-family: conb;
+        margin: 0;
+      }
+
+    }
+  }
+
+  .bank-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 29px 33px;
+    border-radius: 12px;
+    width: 50%;
+
+    h5 {
+      font-size: 1.2rem;
+      margin-bottom: 21px;
+    }
+
+    .card-icon {
+      margin-left: 21px;
+
+      img {
+        width: 134px;
+      }
+    }
+
+    ul {
+      li {
+        margin-bottom: 15px;
+
+        p {
+          font-size: 1rem;
+
+          span {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .payment-form {
+    .form-wrapper {
+      padding: 30px;
+      border-radius: 12px;
+
+    }
+
+    form {
+      margin-top: 40px;
+
+      .form-group {
+        label {
+          color: #000;
+        }
+      }
+    }
+
+  }
+
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .add-payment-page .payment-form .form-wrapper {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .add-payment-page .bank-box {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .add-payment-page .box-price {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* ================================================================ */
+.profile-product-price {
+  h5 {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 35px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 42px;
+  }
+
+  .single-price {
+    margin-bottom: 140px;
+
+    .box-price {
+      text-align: center;
+      padding: 38px;
+      width: fit-content;
+      width: 318px;
+      max-width: 100%;
+      margin-top: 40px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.3);
+
+      p {
+        font-size: 2.4rem;
+        font-family: conb;
+        margin: 0;
+        color: #000;
+      }
+
+    }
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .profile-product-price .box-price {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* ================================================================ */
+
+.create-payment-2 {
+  padding-top: 0;
+
+  .bank-box {
+    width: 100%;
+    margin-top: 0;
+  }
+  .create-payment-2-data{
+    margin-top: 90px;
+    h5{
+      color: #fff;
+      font-size: 2rem;
+    }
+    .new-free-product{
+      padding: 0;
+    }
+    .form-wrapper{
+      margin-top: 0;
+    }
+  }
+}
+
+
+/* ================================================================ */
+
+
+.contact-us-page{
+  padding: 84px 0;
+  .head{
+    text-align: center;
+    h5{
+      color: #fff;
+      font-size: 2.5rem;
+    }
+  }
+}
+.contact-wrapper{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 150px;
+  .contcat-form{
+    width: 818px;
+    max-width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+    position: relative;
+    z-index: 6;
+    padding: 15px 45px;
+    .logo{
+      text-align: center;
+    }
+    textarea{
+      resize: none;
+      height: 137px;
+    }
+    .btn-more{
+      margin-top: 38px;
+      width: 190px;
+      margin-right: auto;
+    }
+  }
+  .contcat-img{
+    width: 653px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+    .card-img{
+      width: 653px;
+      max-width: 100%;
+      height: 770px;
+    }
+  }
+}
 
 /* ================================================================ */
 
@@ -2104,14 +2670,17 @@ input[type="number"] {
   padding: 13px 0 29px 0;
   position: relative;
   overflow: hidden;
+
   .footer-img {
     position: absolute;
     bottom: 0;
     right: 0;
   }
+
   .footer_logo_content {
     width: 80%;
   }
+
   .footer_logo,
   .footer_follow,
   .footer_links,
@@ -2119,32 +2688,40 @@ input[type="number"] {
     position: relative;
     z-index: 2;
   }
+
   .footer_logo {
     text-align: right;
   }
+
   .footer_conten {
     p {
       text-align: right;
     }
   }
+
   h5 {
     color: #000;
     font-family: conb;
     font-size: 1.1rem;
   }
+
   .footer_links {
     margin-top: 65px;
+
     h5 {
       margin-bottom: 32px;
     }
+
     ul {
       // display: flex;
       align-items: center;
+
       // justify-content: space-between;
       // flex-wrap: wrap;
       li {
         width: 100%;
         margin-bottom: 24px;
+
         a {
           color: #000;
           font-family: conl;
@@ -2152,20 +2729,25 @@ input[type="number"] {
       }
     }
   }
+
   .footer_follow {
     margin-top: 65px;
+
     h5 {
       text-align: center;
       font-family: conl;
     }
+
     ul {
       li {
         margin: 0 10px;
       }
     }
   }
+
   .download-app {
     margin-top: 50px;
+
     h5 {
       font-family: conl;
     }
@@ -2173,6 +2755,44 @@ input[type="number"] {
 }
 
 /* ================================================================ */
+@media(max-width: 1024px){
+  .category-cards{
+    .categor-card{
+      .options{
+        width: 90%;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 991px){
+  .category-cards{
+    .categor-card{
+      .options{
+        width: 90%;
+      }
+    }
+  }
+
+  .mynavbar{
+    .logo{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .lista{
+      margin-bottom: 20px;
+      ul{
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+
+/* ================================================================ */
+
 
 /* Shared styles  */
 %backgroundImage {
