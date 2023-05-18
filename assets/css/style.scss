@@ -2752,6 +2752,22 @@ input[type="number"] {
   }
 }
 
+
+.like .liked{
+  display: none;
+  color: red;
+}
+
+.active-like{
+  .disliked{
+    display: none;
+  }
+  .liked{
+    display: block;
+    color: red;
+  }
+}
+
 /* ================================================================ */
 @media (max-width: 1024px) {
   .category-cards {
@@ -2777,6 +2793,11 @@ input[type="number"] {
     }
   }
 
+  .menu_icon {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
   .mynavbar {
     .logo {
       text-align: center;
@@ -2788,6 +2809,19 @@ input[type="number"] {
         justify-content: center;
       }
     }
+  }
+
+  .mynavbar{
+    .lista{
+      display: none;
+    }
+  }
+  .login-register{
+    display: none;
+  }
+
+  .top-header .login-rigister-account-lang .account .card-img{
+    margin-right: 0;
   }
 
   .profile-left-data {

@@ -2201,6 +2201,19 @@ input[type=number] {
   font-family: conl;
 }
 
+.like .liked {
+  display: none;
+  color: red;
+}
+
+.active-like .disliked {
+  display: none;
+}
+.active-like .liked {
+  display: block;
+  color: red;
+}
+
 /* ================================================================ */
 @media (max-width: 1024px) {
   .category-cards .categor-card .options {
@@ -2214,6 +2227,10 @@ input[type=number] {
   .category-cards .categor-card .options {
     width: 90%;
   }
+  .menu_icon {
+    display: flex;
+    margin-bottom: 10px;
+  }
   .mynavbar .logo {
     text-align: center;
     margin-bottom: 20px;
@@ -2223,6 +2240,15 @@ input[type=number] {
   }
   .mynavbar .lista ul {
     justify-content: center;
+  }
+  .mynavbar .lista {
+    display: none;
+  }
+  .login-register {
+    display: none;
+  }
+  .top-header .login-rigister-account-lang .account .card-img {
+    margin-right: 0;
   }
   .profile-left-data {
     padding: 0 10px;

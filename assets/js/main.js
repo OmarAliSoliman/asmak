@@ -5,76 +5,14 @@ $(document).ready(function () {
   if ($(".header-slider").length) {
     $(".header-slider").slick({
       arrows: false,
-      // autoplay: true,
-      // autoplaySpeed: 5000,
+      autoplay: true,
+      autoplaySpeed: 5000,
     });
   }
 
-  if ($(".service-section-slider").length) {
-    $(".service-section-slider").slick({
-      rtl: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      infinite: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1.4,
-          },
-        },
-      ],
-    });
-  }
+
 
   // shows-item-section-slider
-
-  if ($(".shows-item-section-slider").length) {
-    $(".shows-item-section-slider").slick({
-      rtl: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      infinite: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1.4,
-          },
-        },
-      ],
-    });
-  }
 
   if ($(".personal-img").length) {
     $(document).on("change", ".personal-img-file", function () {
@@ -117,7 +55,7 @@ $(document).ready(function () {
     });
   }
 
-  $(".custom-navbar #nav-icon1").click(function () {
+  $(".mynavbar #nav-icon1").click(function () {
     $(".side-nav").addClass("side-nav-open");
     $("html").addClass("side-active");
   });
@@ -143,46 +81,6 @@ $(document).ready(function () {
 
   if ($(".animate__animated").length) {
     new WOW().init();
-  }
-
-  if ($(".services-slider").length) {
-    $(".slider-for").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      fade: true,
-      asNavFor: ".slider-nav",
-    });
-    $(".slider-nav").slick({
-      slidesToShow: 4.5,
-      slidesToScroll: 1,
-      asNavFor: ".slider-for",
-      dots: true,
-      focusOnSelect: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3.5,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-      ],
-    });
   }
 
   if ($(".open-profile-sidebar").length) {
@@ -229,21 +127,6 @@ function customInput(el) {
   };
 }
 
-// var input = document.querySelector("#phone");
-// var countryName = document.querySelector("#country-name");
-// input.addEventListener("countrychange", function() {
-//   var selectedCountry = phoneInput.getSelectedCountryData();
-//   countryName.textContent = selectedCountry.name;
-// });
-
-// if ($(".animation-debth").length) {
-//   var circles = document.querySelector(".animation-debth");
-//   var parallaxInstance = new Parallax(circles);
-// }
-// if ($(".animation-debth2").length) {
-//   var circles = document.querySelector(".animation-debth2");
-//   var parallaxInstance = new Parallax(circles);
-// }
 
 $(window).on("load", function () {
   $("html").removeClass("splash-active");
