@@ -699,6 +699,8 @@ p {
 .header-slider-parent .slider-item .card-img {
   height: calc(100vh - 200px);
   position: relative;
+  -webkit-clip-path: ellipse(80% 55% at 48% 44%);
+          clip-path: ellipse(80% 55% at 48% 44%);
 }
 .header-slider-parent .slider-item .card-img a {
   position: absolute;

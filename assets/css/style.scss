@@ -874,6 +874,7 @@ p {
     .card-img {
       height: calc(100vh - (150px + 50px));
       position: relative;
+      clip-path: ellipse(80% 55% at 48% 44%);
       a {
         position: absolute;
         z-index: 9;
@@ -1064,7 +1065,6 @@ p {
       }
     }
   }
-
 
   .card-img {
     width: 348px;
@@ -2752,17 +2752,16 @@ input[type="number"] {
   }
 }
 
-
-.like .liked{
+.like .liked {
   display: none;
   color: red;
 }
 
-.active-like{
-  .disliked{
+.active-like {
+  .disliked {
     display: none;
   }
-  .liked{
+  .liked {
     display: block;
     color: red;
   }
@@ -2811,16 +2810,16 @@ input[type="number"] {
     }
   }
 
-  .mynavbar{
-    .lista{
+  .mynavbar {
+    .lista {
       display: none;
     }
   }
-  .login-register{
+  .login-register {
     display: none;
   }
 
-  .top-header .login-rigister-account-lang .account .card-img{
+  .top-header .login-rigister-account-lang .account .card-img {
     margin-right: 0;
   }
 
@@ -2968,25 +2967,25 @@ input[type="number"] {
   }
   .onecategory-card {
     flex-direction: column;
-    .like{
-      z-index: 9
+    .like {
+      z-index: 9;
     }
-    .card-img{
+    .card-img {
       width: 100%;
     }
     .card-body {
       padding: 19px 27px 59px 0;
     }
   }
-  .contact-info{
-    .contact-card{
+  .contact-info {
+    .contact-card {
       flex-direction: column;
-      .card-body{
+      .card-body {
         margin-right: 0 !important;
       }
     }
   }
-  .product-owner-page .owner-card{
+  .product-owner-page .owner-card {
     flex-direction: column;
   }
 }
