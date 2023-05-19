@@ -858,7 +858,7 @@ p {
 /* ================================================================ */
 
 .home-main-content {
-  background-image: url("../images/page-bg.png");
+  background-image: url("../images/page-bg.webp");
   min-height: calc(100vh - 150px + 70px);
   height: auto;
   background-size: cover;
@@ -2668,7 +2668,7 @@ input[type="number"] {
   padding: 13px 0 29px 0;
   position: relative;
   overflow: hidden;
-
+  // background-image: url('../images/footer-img.webp');
   .footer-img {
     position: absolute;
     bottom: 0;
@@ -2987,6 +2987,9 @@ input[type="number"] {
   }
   .product-owner-page .owner-card {
     flex-direction: column;
+  }
+  .profile-left-data .onecategory-card .edit{
+    margin-bottom: 10px;
   }
 }
 
