@@ -6,16 +6,22 @@ $secondColor: #0b3c26;
 @font-face {
   font-family: conr;
   src: url("../fonts/CoconNextArabic-Regular.ttf");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: conl;
   src: url("../fonts/Cocon-Next-Arabic-Light.otf");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: conb;
   src: url("../fonts/CoconNextArabic-Bold.ttf");
+  font-display: swap;
+
 }
 
 html {
